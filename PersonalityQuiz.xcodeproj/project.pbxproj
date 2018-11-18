@@ -14,6 +14,7 @@
 		87B6FB2921A10D000094CA0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B6FB2721A10D000094CA0F /* LaunchScreen.storyboard */; };
 		87B6FB3121A1254F0094CA0F /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6FB3021A1254F0094CA0F /* QuestionViewController.swift */; };
 		87B6FB3321A1255A0094CA0F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6FB3221A1255A0094CA0F /* ResultsViewController.swift */; };
+		87B6FB3521A12A3A0094CA0F /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6FB3421A12A3A0094CA0F /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		87B6FB2A21A10D000094CA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B6FB3021A1254F0094CA0F /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		87B6FB3221A1255A0094CA0F /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		87B6FB3421A12A3A0094CA0F /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				87B6FB2A21A10D000094CA0F /* Info.plist */,
 				87B6FB3021A1254F0094CA0F /* QuestionViewController.swift */,
 				87B6FB3221A1255A0094CA0F /* ResultsViewController.swift */,
+				87B6FB3421A12A3A0094CA0F /* QuestionData.swift */,
 			);
 			path = PersonalityQuiz;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				87B6FB2121A10CFE0094CA0F /* IntroductionViewController.swift in Sources */,
 				87B6FB1F21A10CFE0094CA0F /* AppDelegate.swift in Sources */,
+				87B6FB3521A12A3A0094CA0F /* QuestionData.swift in Sources */,
 				87B6FB3121A1254F0094CA0F /* QuestionViewController.swift in Sources */,
 				87B6FB3321A1255A0094CA0F /* ResultsViewController.swift in Sources */,
 			);
