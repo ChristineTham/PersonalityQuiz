@@ -131,15 +131,16 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as!
+            ResultsViewController
+            resultsViewController.responses = answersChosen
+        }
     }
-    */
 
     //MARK: private functions
     
@@ -178,21 +179,25 @@ class QuestionViewController: UIViewController {
     
     func updateMultipleStack(using answers: [Answer]) {
         multipleStackView.isHidden = false
+        multiSwitch1.isOn = false
+        multiSwitch2.isOn = false
+        multiSwitch3.isOn = false
+        multiSwitch4.isOn = false
         multiLabel1.text = answers[0].text
         multiLabel2.text = answers[1].text
         multiLabel3.text = answers[2].text
         multiLabel4.text = answers[3].text
     }
-    
     func updateRangedStack(using answers: [Answer]) {
         rangedStackView.isHidden = false
+        rangedSlider.setValue(0.5, animated: false)
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
     }
 
     func nextQuestion() {
         questionIndex += 1
-          
+        
         if questionIndex < questions.count {
             updateUI()
         } else {
